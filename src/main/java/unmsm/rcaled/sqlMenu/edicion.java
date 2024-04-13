@@ -15,8 +15,8 @@ import java.sql.SQLException;
 
 public class edicion extends coneccionSQL{
 
-	String borrarPorID = "DELETE FROM Doctores WHERE ID = ?";
-	String cambiarHora = "UPDATE Doctores SET Asistencia = 1"
+	public String borrarPorID = "DELETE FROM Doctores WHERE ID = ?";
+	public String cambiarHora = "UPDATE Doctores SET Asistencia = 1"
 		+ " WHERE Horario = ?;"
 		+  "UPDATE Doctores SET Asistencia = 0"
 		+ " WHERE Horario != ?";

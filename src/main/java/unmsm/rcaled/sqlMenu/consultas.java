@@ -8,6 +8,8 @@ import java.sql.ResultSet;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import unmsm.rcaled.sqlMenu.coneccionSQL;
+
 /**
  *
  * @author Ramirez Chero Alejandro
@@ -15,14 +17,7 @@ import java.sql.SQLException;
 
 public class consultas extends coneccionSQL{
 
-	// Scanner input = new Scanner(System.in);
-	// Connection conn = null;
-
-	// String dbURL = "jdbc:sqlserver://localhost:1433;database=PersonalMedico";
-	// String user = "sa";
-	// String pass = "Password123";
-	
-	String datosCompletos = "SELECT * FROM Doctores";
+	public String datosCompletos = "SELECT * FROM Doctores";
 	
 	public void imprimirListaMedicos(){
 		try {

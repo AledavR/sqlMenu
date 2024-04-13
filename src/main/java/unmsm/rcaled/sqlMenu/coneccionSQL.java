@@ -16,15 +16,15 @@ import java.sql.SQLException;
 public class coneccionSQL {
 	
 	Scanner input = new Scanner(System.in);
-	Connection conn = null;
+	protected Connection conn = null;
 
-	String dbURL = "jdbc:sqlserver://localhost:1433;database=PersonalMedico";
-	String user = "sa";
-	String pass = "Password123";
+	protected String dbURL = "jdbc:sqlserver://localhost:1433;database=PersonalMedico";
+	protected String user = "sa";
+	protected String pass = "Password123";
 
-	String[] headers = {"ID","ApellidoPat","Nombre","Especialidad","Horario"};
-	String[] columnas = {"ApellidoPat","Nombre","Especialidad","Horario"};
-	String[] horarios = {"Mañana","Tarde","Noche"};
+	protected String[] headers = {"ID","ApellidoPat","Nombre","Especialidad","Horario"};
+	protected String[] columnas = {"ApellidoPat","Nombre","Especialidad","Horario"};
+	protected String[] horarios = {"Mañana","Tarde","Noche"};
 
 	protected void cerrarConeccion(){
 		try {
@@ -35,7 +35,6 @@ public class coneccionSQL {
 		String query = "SELECT * FROM Doctores WHERE " + columna + " = ?";
 		return query;
 	}
-
 	
 	public String eleccionDeColumna(Scanner input){
 		System.out.println("Que columna desea editar:");
