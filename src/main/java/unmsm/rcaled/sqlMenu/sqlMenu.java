@@ -22,7 +22,7 @@ public class sqlMenu {
 		System.out.println("2) Buscar medico por ID");
 		System.out.println("3) Cambiar datos de un medico por ID");
 		System.out.println("4) Eliminar un medico por ID");
-		System.out.println("5) Seleccionar horario");
+		System.out.println("5) Seleccionar hora del dia");
 		System.out.println("6) Ver medicos presentes");
 		System.out.println("0) Salir");
 		System.out.print("Opcion elegida: ");
@@ -36,6 +36,7 @@ public class sqlMenu {
 	static void eleccion(){
 		Scanner entrada = new Scanner(System.in);
 		int opcion = getInt(entrada);
+		int id = 0;
 		consultas consult = new consultas();
 		switch (opcion){
 		case 1:
@@ -43,27 +44,29 @@ public class sqlMenu {
 			break;
 		case 2:
 			System.out.println("Digite la ID del medico:");
-			int id = getInt(entrada);
+			id = getInt(entrada);
 			consult.buscarIDMedico(id);
 			break;
 		case 3:
 			System.out.println("Digite la ID del medico:");
-			int idBusqueda = entrada.nextInt();
+			id= entrada.nextInt();
 			entrada.nextLine();
 			String columna = consult.eleccionDeColumna(entrada);
 			entrada.nextLine();
 			System.out.println("Ingrese el nuevo dato");
 			String nuevoDato = entrada.nextLine();
-			consult.cambiarDatoColumna(columna, nuevoDato,idBusqueda);
+			consult.cambiarDatoColumna(columna, nuevoDato,id);
 			break;
 		case 4:
-			System.out.println("opcion4");
+			System.out.println("Digite la ID del medico:");
+			id = entrada.nextInt();
+			consult.borrarFila(id);
 			break;
 		case 5:
-			System.out.println("opcion5");
+			consult.actualizarAsistencias(consult.eleccionDeHora(entrada));
 			break;
 		case 6:
-			System.out.println("opcion6");
+			consult.mostrarDoctoresPresentes();
 			break;
 		case 0:
 			System.out.println("opcion7");
