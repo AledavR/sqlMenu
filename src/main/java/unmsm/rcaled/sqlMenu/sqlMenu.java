@@ -1,9 +1,9 @@
-
 package unmsm.rcaled.sqlMenu;
 
 import java.util.Scanner;
 
 import unmsm.rcaled.sqlMenu.consultas;
+import unmsm.rcaled.sqlMenu.edicion;
 
 /**
  *
@@ -38,6 +38,7 @@ public class sqlMenu {
 		int opcion = getInt(entrada);
 		int id = 0;
 		consultas consult = new consultas();
+		edicion edit = new edicion();
 		switch (opcion){
 		case 1:
 			consult.imprimirListaMedicos();
@@ -51,19 +52,19 @@ public class sqlMenu {
 			System.out.println("Digite la ID del medico:");
 			id= entrada.nextInt();
 			entrada.nextLine();
-			String columna = consult.eleccionDeColumna(entrada);
+			String columna = edit.eleccionDeColumna(entrada);
 			entrada.nextLine();
 			System.out.println("Ingrese el nuevo dato");
 			String nuevoDato = entrada.nextLine();
-			consult.cambiarDatoColumna(columna, nuevoDato,id);
+			edit.cambiarDatoColumna(columna, nuevoDato,id);
 			break;
 		case 4:
 			System.out.println("Digite la ID del medico:");
 			id = entrada.nextInt();
-			consult.borrarFila(id);
+			edit.borrarFila(id);
 			break;
 		case 5:
-			consult.actualizarAsistencias(consult.eleccionDeHora(entrada));
+			edit.actualizarAsistencias(consult.eleccionDeHora(entrada));
 			break;
 		case 6:
 			consult.mostrarDoctoresPresentes();
