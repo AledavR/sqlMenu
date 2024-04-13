@@ -47,7 +47,14 @@ public class sqlMenu {
 			consult.buscarIDMedico(id);
 			break;
 		case 3:
-			System.out.println("opcion3");
+			System.out.println("Digite la ID del medico:");
+			int idBusqueda = entrada.nextInt();
+			entrada.nextLine();
+			String columna = consult.eleccionDeColumna(entrada);
+			entrada.nextLine();
+			System.out.println("Ingrese el nuevo dato");
+			String nuevoDato = entrada.nextLine();
+			consult.cambiarDatoColumna(columna, nuevoDato,idBusqueda);
 			break;
 		case 4:
 			System.out.println("opcion4");
