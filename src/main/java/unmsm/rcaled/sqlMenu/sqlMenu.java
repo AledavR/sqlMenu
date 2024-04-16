@@ -17,6 +17,7 @@ public class sqlMenu {
 	static String[] menuPrincipal = {
 		"Sistema de Atencion Hospitalaria",
 		"",
+		"",
 		"Elija una opcion:",
 		"",
 		"1) Ver la lista completa de doctores",
