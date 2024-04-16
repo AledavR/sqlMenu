@@ -23,7 +23,7 @@ public class sqlMenu {
 		"1) Ver la lista completa de doctores",
 		"2) Buscar medico por el ID",
 		"3) Cambiar la información de un medico por ID",
-		"4) Eliminar un medico por ID",
+		"4) Borrar un medico por ID",
 		"5) Seleccionando horario",
 		"6) Ver medicos asistentes",
 		"0) Salir",
