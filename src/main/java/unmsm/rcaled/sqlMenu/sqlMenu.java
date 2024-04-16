@@ -5,6 +5,7 @@ import java.util.Scanner;
 import unmsm.rcaled.sqlMenu.consultas;
 import unmsm.rcaled.sqlMenu.edicion;
 
+
 /**
  *
  * @author Ramirez Chero Alejandro
@@ -27,7 +28,6 @@ public class sqlMenu {
 		"0) Salir",
 		"Opcion elegida: "
 	};
-
 
 	static void imprimirMenu(String[] menuToPrint){
 		for (int i= 0; i < menuToPrint.length; i++)
@@ -76,10 +76,9 @@ public class sqlMenu {
 		}
 	}
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 		imprimirMenu(menuPrincipal);
 		eleccion();
-    }
-
+	}
 }
 

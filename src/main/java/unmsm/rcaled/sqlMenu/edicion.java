@@ -1,6 +1,10 @@
 package unmsm.rcaled.sqlMenu;
 
 import java.util.Scanner;
+
+import javax.annotation.processing.Generated;
+
+import java.io.ObjectInputStream.GetField;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
