@@ -25,7 +25,6 @@ sdfsdfsfdsf
 		"3) Cambiar la información de un medico por ID",
 		"4) Eliminando un medico por ID",
 		"5) Seleccionar horario",
-		"6) Ver medicos asistentes",
 		
 
 		"Opcion elegida: "
