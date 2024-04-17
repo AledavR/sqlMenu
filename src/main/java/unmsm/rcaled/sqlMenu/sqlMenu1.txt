@@ -13,7 +13,8 @@ import unmsm.rcaled.sqlMenu.edicion;
 
 
 public class sqlMenu {
-sdfsdfsfdsf
+
+
 	static String[] menuPrincipal = {
 		"Sistema de Atencion Hospitalaria",
 		"",
