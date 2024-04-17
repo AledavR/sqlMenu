@@ -27,14 +27,6 @@ public class sqlMenu {
 		"5) Seleccionar horario",
 		"6) Ver medicos asistentes",
 		"0) Salir",
-				"0) Salir",
-
-						"0) Salir",
-
-								"0) Salir",
-
-										"0) Salir",
-
 		"Opcion elegida: "
 	};
 
