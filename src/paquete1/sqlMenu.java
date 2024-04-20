@@ -7,6 +7,7 @@ import java.util.Scanner;
  * @author Ramirez Chero Alejandro
  */
 
+
 public class sqlMenu extends consultas{
 
     static String[] menuPrincipal = {
